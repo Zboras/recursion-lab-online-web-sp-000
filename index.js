@@ -47,7 +47,7 @@ function includesNumber(array, num) {
   if (arr.length === 0) {return false}
   if (num === arr[0]) {return true}
   else {arr.splice(0,1)}
-  return includesNumber(arr)
+  return includesNumber(arr,num)
 }
 
 
