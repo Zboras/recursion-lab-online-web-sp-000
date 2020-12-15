@@ -42,5 +42,13 @@ function maxOf(array) {
   return maxOf(arr)
 }
 
+function includesNumber(array, num) {
+  const arr = array.slice()
+  if (arr.length === 0) {return false}
+  if (num === arr[0]) {return true}
+  else {arr.splice(0,1)}
+  return includesNumber(arr)
+}
+
 
 
