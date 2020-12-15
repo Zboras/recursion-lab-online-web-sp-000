@@ -34,7 +34,13 @@ return index ? array[index] + addUpTo(array, --index) : array[index];
 }
 
 
-
+function maxOf(array) {
+  const arr = array.slice()
+  if (arr.length == 1) {return arr[0]}
+  if (arr[0] <arr[1]) {arr.splice(0,9)}
+  else {arr.splice(1,1)}
+  return maxOf(arr)
+}
 
 
 
